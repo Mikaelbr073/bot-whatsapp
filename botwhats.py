@@ -7,6 +7,7 @@ time.sleep(10)
 
 def bot():
     try: 
+        #PEGA A MENSAGEM DO CLIENTE  
         getNewMessages = driver.find_element_by_class_name('_23LrM')
         getNewMessages = driver.find_elements_by_class_name('_23LrM')
         selectionMessages = getNewMessages[-1]
@@ -16,6 +17,11 @@ def bot():
         getMessages.perform()
         getMessages.click()
         getMessages.perform()
+        #PEGA O NÚMERO DO CLIENTE 
+        fone_client = driver.find_element_by_xpath('//*[@id="pane-side"]/div[1]/div/div/div/div/div/div/div[2]/div[1]/div[1]/span/span')
+        fone_text = fone_client.text
+        print(fone_text)
+        
 
         
 
