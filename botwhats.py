@@ -21,6 +21,7 @@ def bot():
         fone_client = driver.find_element_by_xpath('//*[@id="pane-side"]/div[1]/div/div/div/div/div/div/div[2]/div[1]/div[1]/span/span')
         fone_text = fone_client.text
         print(fone_text)
+        #nada
         
 
         
